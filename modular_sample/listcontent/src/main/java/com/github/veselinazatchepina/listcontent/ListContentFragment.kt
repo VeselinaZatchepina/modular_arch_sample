@@ -42,7 +42,7 @@ class ListContentFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         defineMoviesAdapter()
         listContentViewModel.liveMovies.observe(this, Observer {
-            moviesAdapter?.update(it.sortedBy { it.id })
+            moviesAdapter?.update(it)
         })
     }
 

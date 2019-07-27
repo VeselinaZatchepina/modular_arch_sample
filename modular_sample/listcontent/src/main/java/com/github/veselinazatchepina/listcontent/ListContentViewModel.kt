@@ -20,7 +20,7 @@ class ListContentViewModel : ViewModel() {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                liveMovies.value = it
+                liveMovies.value = it.sortedBy { it.id }
             }, {
                 it.printStackTrace()
             }))
