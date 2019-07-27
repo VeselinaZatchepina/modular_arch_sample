@@ -1,0 +1,1 @@
+include ':app', ':listcontent', ':cardcontent', ':shortmovieinfo', ':additionalmovieinfo', ':repositories', ':entities'
