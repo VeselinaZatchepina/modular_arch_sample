@@ -32,16 +32,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    }
-
-    override fun onResume() {
-        super.onResume()
         navigator.bind(this)
         navigator.showListContent()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        navigator.unbind()
     }
 }

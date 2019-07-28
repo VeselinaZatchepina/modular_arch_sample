@@ -8,8 +8,6 @@ interface Navigator : ListContentNavigator, CardContentNavigator {
 
     fun bind(activity: FragmentActivity?)
 
-    fun unbind()
-
     fun showListContent()
 
 }

@@ -25,10 +25,6 @@ class NavigatorImpl : Navigator {
         this.activity = activity
     }
 
-    override fun unbind() {
-        activity = null
-    }
-
     override fun showListContent() {
         replaceFragment(activity, ListContentFragment.createInstance())
     }
